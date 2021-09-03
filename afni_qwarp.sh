@@ -8,8 +8,8 @@ echo "loading filename and optional parameters..."
 t1=`jq -r '.t1' config.json`
 optional_params=`jq -r '.optional_params' config.json`
 
-3dQwarp -allineate -prefix sub-0202_T1wQ -blur 0 3 -base /usr/local/pkg/afni/TT_152_2009c+tlrc.BRIK.gz 
--source sub-0202_T1w_ss.nii.gz -minpatch 7 -Qfinal -workhard
+3dQwarp -allineate -prefix sub-0202_T1wQ -blur 0 3 -base template/TT_152_2009c+tlrc.BRIK.gz
+-source $t1 -minpatch 7 -Qfinal -workhard
 
 # following creates an output filename w a suffix
 # rather than AFNI's default prefix
