@@ -4,7 +4,7 @@
 # app-example-documentation
 [See the AFNI documentation for 3dQwarp](https://afni.nimh.nih.gov/pub/dist/doc/program_help/3dQwarp.html).
 
-To use this app, 
+To use this app, add all optional tags
 ### Authors
 - [Eva Bacas](e.bacas@pitt.edu)
 
