@@ -2,8 +2,9 @@
 [![Run on Brainlife.io](https://img.shields.io/badge/Brainlife-bl.app.346-blue.svg)](https://doi.org/10.25663/brainlife.app.346)
 
 # app-example-documentation
-working on it
+[See the AFNI documentation for 3dQwarp](https://afni.nimh.nih.gov/pub/dist/doc/program_help/3dQwarp.html).
 
+To use this app, 
 ### Authors
 - [Eva Bacas](e.bacas@pitt.edu)
 
@@ -39,8 +40,9 @@ You can submit this App online at [https://doi.org/10.25663/bl.app.1](https://do
 
 ```json
 {
-  	"t1":	"/testdata/t1/t1.nii.gz",
-  	"optional_params": null
+	"t1":	"/testdata/t1/t1.nii.gz",
+	"template": "template/MNI152_T1_2009c+tlrc.BRIK.gz",
+	"optional_params": "-allineate -blur 0 3 -minpatch 7 -Qfinal -workhard"
 }
 ```
 
@@ -64,20 +66,13 @@ bl dataset download 5a0dcb1216e499548135dd27 && mv 5a0dcb1216e499548135dd27 inpu
 
 ## Output
 
-coming soon
-
-#### Product.json
-
-coming soon
+`t1.nii.gz`
 
 ### Dependencies
 
 This App only requires [singularity](https://www.sylabs.io/singularity/) to run. If you don't have singularity, you will need to install following dependencies.  
 
-  - Matlab: https://www.mathworks.com/products/matlab.html
-  - jsonlab: https://www.mathworks.com/matlabcentral/fileexchange/33381-jsonlab-a-toolbox-to-encode-decode-json-files
-  - VISTASOFT: https://github.com/vistalab/vistasoft/
-  - ENCODE: https://github.com/brain-life/encode
-  - MBA: https://github.com/francopestilli/mba
+  - AFNI: [https://afni.nimh.nih.gov/](https://afni.nimh.nih.gov/)
+  - JQ: [https://stedolan.github.io/jq/](https://stedolan.github.io/jq/)
 
 #### MIT Copyright (c) 2020 brainlife.io The University of Texas at Austin and Indiana University
