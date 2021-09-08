@@ -1,6 +1,6 @@
 
 {
 	"t1":	"/testdata/t1/t1.nii.gz",
-	"template": "template/MNI152_T1_2009c+tlrc.BRIK.gz"
-	"optional_params": null
+	"template": "template/MNI152_T1_2009c+tlrc.BRIK.gz",
+	"optional_params": "-allineate -blur 0 3 -minpatch 7 -Qfinal -workhard"
 }
