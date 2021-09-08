@@ -4,17 +4,17 @@ Xvfb :88 &
 export DISPLAY=:88
 
 # load filename and optional parameters
+
 echo "loading filename and optional parameters..."
 t1=`jq -r '.t1' config.json`
 optional_params=`jq -r '.optional_params' config.json`
 
-3dQwarp -allineate -prefix sub-0202_T1wQ -blur 0 3 -base template/TT_152_2009c+tlrc.BRIK.gz
--source $t1 -minpatch 7 -Qfinal -workhard
+# current there is only ONE option for template
+# this is in here jic we decide to add more
+template=`jq -r '.template' config.json`
 
 # following creates an output filename w a suffix
-# rather than AFNI's default prefix
-# t1_fn=$(echo $t1 | cut -d "." -f 1 | rev | cut -d "/" -f 1 | rev)
-output_fn=t1_ss.nii.gz
+output_fn=t1_qwarp.nii.gz
 
 # create new directory skullStrip for t1w file and output
 echo "creating skullStrip folder..."
@@ -30,6 +30,8 @@ if [ "$optional_params" != "null" ]; then
 else
     3dSkullStrip -input ./skullStrip/t1.nii.gz -prefix ${output_fn}
 fi
+
+3dQwarp -allineate -prefix sub-0202_T1wQ -blur 0 3 -base $template -source $t1 -minpatch 7 -Qfinal -workhard
 
 # move output to output folder
 echo "creating output folder..."
