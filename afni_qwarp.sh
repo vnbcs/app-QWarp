@@ -1,3 +1,5 @@
+#!/bin/bash
+
 # trying to make AFNI not whine about lack of display
 echo "creating xvfb display..."
 Xvfb :88 &
