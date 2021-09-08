@@ -3,7 +3,7 @@
 
 # app-QWarp
 
-THis App runs AFNI's 3dQwarp function over a 3D/4D NIfTI file
+This App runs AFNI's 3dQwarp function over a 3D/4D NIfTI file
 
 [See the AFNI documentation for 3dQwarp](https://afni.nimh.nih.gov/pub/dist/doc/program_help/3dQwarp.html).
 
