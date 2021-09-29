@@ -33,11 +33,9 @@ else
     3dQwarp -source ./QWarp/t1.nii.gz -base $template -prefix ${output_fn}
 fi
 
-ls *
-
 # move output to output folder
 echo "creating output folder..."
 mkdir -p output
-cp t1_qwarp.nii.gz output/t1.nii.gz
+cp t1_qwarp.nii.gz ./output/t1.nii.gz
 
 echo "process complete"
