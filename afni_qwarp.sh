@@ -28,9 +28,9 @@ install $t1 QWarp/t1.nii.gz
 # run 3dQwarp
 echo "running 3dQwarp..."
 if [ "$optional_params" != "null" ]; then
-    3dQwarp -source ./QWarp/t1.nii.gz -base $template -prefix ${output_fn} ${optional_params}
+    3dQwarp ${optional_params} -base $template -source ./QWarp/t1.nii.gz -prefix ${output_fn}
 else
-    3dQwarp -source ./QWarp/t1.nii.gz -base $template -prefix ${output_fn}
+    3dQwarp -base $template -source ./QWarp/t1.nii.gz -prefix ${output_fn}
 fi
 
 # move output to output folder
