@@ -1,7 +1,10 @@
 [![Abcdspec-compliant](https://img.shields.io/badge/ABCD_Spec-v1.1-green.svg)](https://github.com/brain-life/abcd-spec)
 [![Run on Brainlife.io](https://img.shields.io/badge/Brainlife-bl.app.346-blue.svg)](https://doi.org/10.25663/brainlife.app.346)
 
-# app-example-documentation
+# app-QWarp
+
+This App runs AFNI's 3dQwarp function over a 3D/4D NIfTI file
+
 [See the AFNI documentation for 3dQwarp](https://afni.nimh.nih.gov/pub/dist/doc/program_help/3dQwarp.html).
 
 To use this app, add all optional tags
@@ -23,15 +26,16 @@ brainlife.io is publicly funded and for the sustainability of the project it is 
 ### Citations
 We kindly ask that you cite the following articles when publishing papers and code using this code.
 
-1. Avesani, P., McPherson, B., Hayashi, S. et al. The open diffusion data derivatives, brain data upcycling via integrated publishing of derivatives and reproducible open cloud services. Sci Data 6, 69 (2019). [https://doi.org/10.1038/s41597-019-0073-y](https://doi.org/10.1038/s41597-019-0073-y)
+1. Avesani, P., McPherson, B., Hayashi, S. et al. The open diffusion data derivatives, brain data upcycling via integrated publishing of derivatives and reproducible open cloud services. Sci Data 6, 69 (2019). [https://doi.org/10.1038/s41597-019-0073-y](https://doi.org/10.1038/s41597-019-0073-y).
+2. Cox RW (1996) AFNI: software for analysis and visualization of functional magnetic resonance images. Comput Biomed Res 29:162–173. [https://doi.org/10.1006/cbmr.1996.0014](https://doi.org/10.1006/cbmr.1996.0014)
 
-#### MIT Copyright (c) 2020 brainlife.io The University of Texas at Austin and Indiana University
+#### MIT Copyright (c) 2021 brainlife.io The University of Texas at Austin
 
 ## Running the App
 
 ### On Brainlife.io
 
-You can submit this App online at [https://doi.org/10.25663/bl.app.1](https://doi.org/10.25663/bl.app.1) via the "Execute" tab.
+You can submit this App online at [https://doi.org/10.25663/bl.app.346](https://doi.org/10.25663/bl.app.346) via the "Execute" tab.
 
 ### Running Locally (on your machine)
 
@@ -75,4 +79,4 @@ This App only requires [singularity](https://www.sylabs.io/singularity/) to run.
   - AFNI: [https://afni.nimh.nih.gov/](https://afni.nimh.nih.gov/)
   - JQ: [https://stedolan.github.io/jq/](https://stedolan.github.io/jq/)
 
-#### MIT Copyright (c) 2020 brainlife.io The University of Texas at Austin and Indiana University
+#### MIT Copyright (c) 2021 brainlife.io The University of Texas at Austin

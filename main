@@ -1,12 +1,10 @@
-# this app runs afni's 3DQwarp function over a nifti file
-
 #!/bin/bash
+
+# this app runs afni's 3DQwarp function over a nifti file
 
 #SBATCH --job-name=qwarp
 #SBATCH --ntasks-per-node=1
 #SBATCH --mem=1G
 #SBATCH --time=00:15:00
 
-chmod +x afni_qwarp.sh
-
-time singularity exec -e docker://vnbcs/afni_for_bl:1.2  afni_qwarp.sh
+time singularity exec -e docker://vnbcs/afni_for_bl:1.2 ./afni_qwarp.sh
