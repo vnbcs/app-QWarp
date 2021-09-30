@@ -26,12 +26,14 @@ mkdir -p QWarp
 install $t1 QWarp/t1.nii.gz
 
 # run 3dQwarp
-echo "running 3dQwarp..."
-if [ "$optional_params" != "null" ]; then
-    3dQwarp ${optional_params} -base $template -source ./QWarp/t1.nii.gz -prefix ${output_fn}
-else
-    3dQwarp -base $template -source ./QWarp/t1.nii.gz -prefix ${output_fn}
-fi
+# echo "running 3dQwarp..."
+# if [ "$optional_params" != "null" ]; then
+#     3dQwarp ${optional_params} -base $template -source ./QWarp/t1.nii.gz -prefix ${output_fn}
+# else
+#     3dQwarp -base $template -source ./QWarp/t1.nii.gz -prefix ${output_fn}
+# fi
+
+3dQwarp ${optional_params} -base $template -source ./QWarp/t1.nii.gz -prefix ${output_fn}
 
 # move output to output folder
 echo "creating output folder..."
