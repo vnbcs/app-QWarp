@@ -33,6 +33,7 @@ install $t1 QWarp/t1.nii.gz
 #     3dQwarp -base $template -source ./QWarp/t1.nii.gz -prefix ${output_fn}
 # fi
 
+# currently the option to *not* use optional params is disabled
 3dQwarp ${optional_params} -base $template -source ./QWarp/t1.nii.gz -prefix ${output_fn}
 
 # move output to output folder
